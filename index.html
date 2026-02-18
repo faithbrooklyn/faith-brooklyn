@@ -1,0 +1,3240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Faith Brooklyn - Professional Book Marketing Expert helping authors get their books seen, read, and sold. Transform your book's visibility with proven marketing strategies.">
+  <meta name="keywords" content="book marketing, author marketing, book promotion, Amazon book marketing, book launch strategy, Faith Brooklyn">
+  <meta name="author" content="Faith Brooklyn">
+  <meta property="og:title" content="Faith Brooklyn | Book Marketing Expert">
+  <meta property="og:description" content="Helping authors get their books seen, read, and sold with proven marketing strategies.">
+  <meta property="og:type" content="website">
+  <title>Faith Brooklyn | Book Marketing Expert — Get Your Book Seen, Read & Sold</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700;800&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* =============================================
+       CSS VARIABLES & ROOT SETTINGS
+       ============================================= */
+    :root {
+      --primary: #1B3A4B;
+      --primary-light: #2D5F74;
+      --primary-dark: #0F2633;
+      --accent: #C8956C;
+      --accent-light: #D4A882;
+      --accent-dark: #A87B55;
+      --accent-glow: rgba(200, 149, 108, 0.15);
+      --gold: #D4A854;
+      --gold-light: #E8C878;
+      --warm-white: #FDF8F3;
+      --cream: #F5EDE4;
+      --cream-dark: #EBE0D4;
+      --text-dark: #1A1A1A;
+      --text-body: #3D3D3D;
+      --text-muted: #6B6B6B;
+      --text-light: #8A8A8A;
+      --white: #FFFFFF;
+      --border: #E5DDD4;
+      --success: #2E7D4F;
+      --success-light: #E8F5EC;
+
+      --shadow-sm: 0 2px 8px rgba(27, 58, 75, 0.06);
+      --shadow-md: 0 4px 20px rgba(27, 58, 75, 0.08);
+      --shadow-lg: 0 8px 40px rgba(27, 58, 75, 0.12);
+      --shadow-xl: 0 20px 60px rgba(27, 58, 75, 0.15);
+      --shadow-accent: 0 4px 20px rgba(200, 149, 108, 0.25);
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 30px;
+      --radius-full: 50px;
+
+      --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --transition-slow: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+      --max-width: 1200px;
+      --section-padding: 120px;
+    }
+
+    /* =============================================
+       RESET & BASE STYLES
+       ============================================= */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-body);
+      background-color: var(--warm-white);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--text-dark);
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--text-body);
+      line-height: 1.85;
+      font-size: 1.05rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    ul { list-style: none; }
+
+    ::selection {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    /* =============================================
+       UTILITY CLASSES
+       ============================================= */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: var(--section-padding) 0;
+    }
+
+    .section-cream {
+      background: var(--cream);
+    }
+
+    .section-dark {
+      background: var(--primary);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 70px;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: var(--accent);
+      background: var(--accent-glow);
+      padding: 8px 24px;
+      border-radius: var(--radius-full);
+      margin-bottom: 20px;
+      border: 1px solid rgba(200, 149, 108, 0.2);
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+
+    .section-title-light {
+      color: var(--white);
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.9;
+    }
+
+    .accent-line {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent), var(--gold));
+      margin: 20px auto;
+      border-radius: 3px;
+    }
+
+    /* =============================================
+       BUTTONS
+       ============================================= */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 38px;
+      border-radius: var(--radius-full);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 2px solid transparent;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      color: var(--white);
+      border-color: var(--accent);
+      box-shadow: var(--shadow-accent);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(200, 149, 108, 0.4);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--primary);
+      border-color: var(--white);
+    }
+
+    .btn-secondary:hover {
+      background: var(--cream);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .btn-outline:hover {
+      background: var(--accent);
+      color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    .btn-outline-light {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.4);
+    }
+
+    .btn-outline-light:hover {
+      background: var(--white);
+      color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .btn-large {
+      padding: 20px 48px;
+      font-size: 1.05rem;
+    }
+
+    .btn-small {
+      padding: 12px 28px;
+      font-size: 0.85rem;
+    }
+
+    /* =============================================
+       SCROLL ANIMATIONS
+       ============================================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-60px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal-left.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(60px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal-right.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal-scale.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .stagger-1 { transition-delay: 0.1s; }
+    .stagger-2 { transition-delay: 0.2s; }
+    .stagger-3 { transition-delay: 0.3s; }
+    .stagger-4 { transition-delay: 0.4s; }
+    .stagger-5 { transition-delay: 0.5s; }
+    .stagger-6 { transition-delay: 0.6s; }
+
+    /* =============================================
+       NAVIGATION
+       ============================================= */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      padding: 20px 0;
+      transition: var(--transition);
+      background: transparent;
+    }
+
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 14px 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .logo-faith {
+      color: var(--white);
+      transition: var(--transition);
+    }
+
+    .logo-brooklyn {
+      color: var(--accent-light);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled .logo-faith {
+      color: var(--primary);
+    }
+
+    .navbar.scrolled .logo-brooklyn {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-links a {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled .nav-links a {
+      color: var(--text-body);
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+      background: rgba(255,255,255,0.1);
+    }
+
+    .navbar.scrolled .nav-links a:hover {
+      color: var(--accent);
+      background: var(--accent-glow);
+    }
+
+    .nav-cta-btn {
+      background: var(--accent) !important;
+      color: var(--white) !important;
+      font-weight: 600 !important;
+      padding: 10px 24px !important;
+      border-radius: var(--radius-full) !important;
+    }
+
+    .nav-cta-btn:hover {
+      background: var(--accent-dark) !important;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-accent);
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+      padding: 5px;
+      z-index: 10001;
+    }
+
+    .hamburger .bar {
+      width: 28px;
+      height: 2.5px;
+      background: var(--white);
+      border-radius: 3px;
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled .hamburger .bar {
+      background: var(--text-dark);
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* Mobile overlay */
+    .nav-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 9998;
+    }
+
+    .nav-overlay.active {
+      display: block;
+    }
+
+    /* =============================================
+       HERO SECTION
+       ============================================= */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(165deg, #0a1628 0%, var(--primary-dark) 30%, var(--primary) 60%, var(--primary-light) 100%);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -30%;
+      width: 80%;
+      height: 200%;
+      background: radial-gradient(ellipse, rgba(200, 149, 108, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(to top, var(--warm-white), transparent);
+      z-index: 2;
+    }
+
+    .hero-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 80px;
+      align-items: center;
+      position: relative;
+      z-index: 3;
+      width: 100%;
+    }
+
+    .hero-content {
+      padding: 40px 0;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 149, 108, 0.15);
+      border: 1px solid rgba(200, 149, 108, 0.25);
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      margin-bottom: 28px;
+    }
+
+    .hero-badge span {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero-badge i {
+      color: var(--gold-light);
+      font-size: 0.75rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      color: var(--white);
+      margin-bottom: 24px;
+      line-height: 1.15;
+      font-weight: 800;
+    }
+
+    .hero-title .highlight {
+      color: var(--accent-light);
+      position: relative;
+    }
+
+    .hero-title .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--accent);
+      opacity: 0.5;
+      border-radius: 3px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.9;
+      margin-bottom: 40px;
+      max-width: 540px;
+      font-family: 'Crimson Text', serif;
+      font-size: 1.25rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .trust-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent-light);
+    }
+
+    .trust-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.55);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
+
+    .trust-divider {
+      width: 1px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* Hero Image */
+    .hero-image-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image-container {
+      position: relative;
+      width: 420px;
+      height: 520px;
+    }
+
+    .hero-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-xl);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-image-frame {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid rgba(200, 149, 108, 0.3);
+      border-radius: var(--radius-lg);
+      z-index: 1;
+    }
+
+    .hero-image-accent {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, var(--accent), var(--gold));
+      border-radius: var(--radius-lg);
+      z-index: 0;
+      opacity: 0.2;
+    }
+
+    .hero-float-card {
+      position: absolute;
+      z-index: 5;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      padding: 16px 22px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: floatAnimation 3s ease-in-out infinite;
+    }
+
+    .hero-float-card.card-top {
+      top: 30px;
+      right: -30px;
+      animation-delay: 0s;
+    }
+
+    .hero-float-card.card-bottom {
+      bottom: 60px;
+      left: -30px;
+      animation-delay: 1.5s;
+    }
+
+    .float-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .float-icon.icon-green {
+      background: var(--success-light);
+      color: var(--success);
+    }
+
+    .float-icon.icon-gold {
+      background: #FFF3E0;
+      color: var(--gold);
+    }
+
+    .float-card-text h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 2px;
+    }
+
+    .float-card-text p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    @keyframes floatAnimation {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* =============================================
+       PROBLEMS/PAIN POINTS SECTION
+       ============================================= */
+    .problems-section {
+      background: var(--white);
+    }
+
+    .problems-intro {
+      max-width: 800px;
+      margin: 0 auto 60px;
+      text-align: center;
+    }
+
+    .problems-intro p {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.2rem;
+      color: var(--text-body);
+      line-height: 2;
+    }
+
+    .problems-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 50px;
+    }
+
+    .problem-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 35px 28px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .problem-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, #E74C3C, #C0392B);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .problem-card:hover::before {
+      opacity: 1;
+    }
+
+    .problem-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .problem-icon {
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    .problem-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+      color: var(--text-dark);
+    }
+
+    .problem-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .problems-bottom {
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border-radius: var(--radius-lg);
+      color: var(--white);
+    }
+
+    .problems-bottom h3 {
+      font-size: 1.6rem;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .problems-bottom p {
+      color: rgba(255,255,255,0.8);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+      font-family: 'Crimson Text', serif;
+      font-size: 1.15rem;
+    }
+
+    /* =============================================
+       ABOUT / INTRO SECTION
+       ============================================= */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-image-wrapper {
+      position: relative;
+    }
+
+    .about-image-wrapper img {
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-xl);
+      width: 100%;
+      height: 580px;
+      object-fit: cover;
+    }
+
+    .about-image-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--accent);
+      color: var(--white);
+      padding: 20px 28px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-accent);
+      text-align: center;
+    }
+
+    .about-image-badge h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .about-image-badge p {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.85);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
+
+    .about-content {
+      padding: 20px 0;
+    }
+
+    .about-content .section-badge {
+      text-align: left;
+    }
+
+    .about-content h2 {
+      font-size: 2.4rem;
+      margin-bottom: 24px;
+    }
+
+    .about-content > p {
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 30px 0 35px;
+    }
+
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px;
+      background: var(--cream);
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .about-feature:hover {
+      background: var(--cream-dark);
+      transform: translateX(5px);
+    }
+
+    .about-feature i {
+      color: var(--success);
+      font-size: 1rem;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .about-feature span {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-body);
+    }
+
+    /* =============================================
+       SERVICES SECTION
+       ============================================= */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 40px 30px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, var(--accent), var(--gold));
+      transform: scaleX(0);
+      transition: var(--transition);
+      transform-origin: left;
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: transparent;
+    }
+
+    .service-card.featured {
+      border: 2px solid var(--accent);
+      background: linear-gradient(to bottom, rgba(200, 149, 108, 0.03), var(--white));
+    }
+
+    .service-card.featured::before {
+      transform: scaleX(1);
+    }
+
+    .service-popular-tag {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--accent);
+      color: var(--white);
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .service-icon-wrapper {
+      width: 65px;
+      height: 65px;
+      background: var(--accent-glow);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-icon-wrapper {
+      background: var(--accent);
+    }
+
+    .service-icon-wrapper i {
+      font-size: 1.4rem;
+      color: var(--accent);
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-icon-wrapper i {
+      color: var(--white);
+    }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 14px;
+      color: var(--text-dark);
+    }
+
+    .service-card p {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .service-list {
+      margin-bottom: 22px;
+    }
+
+    .service-list li {
+      font-size: 0.88rem;
+      color: var(--text-body);
+      padding: 6px 0;
+      padding-left: 22px;
+      position: relative;
+    }
+
+    .service-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    .service-link {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .service-link:hover {
+      color: var(--accent-dark);
+      gap: 10px;
+    }
+
+    /* =============================================
+       RESULTS / CASE STUDIES
+       ============================================= */
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .result-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      border: 1px solid var(--border);
+    }
+
+    .result-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .result-card-header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .result-card-header::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 100px;
+      height: 100px;
+      background: rgba(200, 149, 108, 0.1);
+      border-radius: 50%;
+    }
+
+    .result-card-header .result-badge {
+      display: inline-block;
+      background: rgba(200, 149, 108, 0.2);
+      color: var(--accent-light);
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .result-card-header h3 {
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .result-card-header p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .result-card-body {
+      padding: 28px;
+    }
+
+    .result-card-body > p {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+      line-height: 1.8;
+    }
+
+    .result-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .result-stat {
+      text-align: center;
+      padding: 14px 10px;
+      background: var(--cream);
+      border-radius: var(--radius-sm);
+    }
+
+    .result-stat h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 2px;
+    }
+
+    .result-stat span {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .result-quote {
+      font-family: 'Crimson Text', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: var(--text-body);
+      padding: 16px 20px;
+      border-left: 3px solid var(--accent);
+      background: var(--warm-white);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      line-height: 1.7;
+    }
+
+    /* =============================================
+       PROCESS SECTION
+       ============================================= */
+    .process-wrapper {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .process-step {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 24px;
+      padding: 30px;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      align-items: flex-start;
+    }
+
+    .process-step:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-md);
+      transform: translateX(8px);
+    }
+
+    .process-number {
+      width: 55px;
+      height: 55px;
+      min-width: 55px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      box-shadow: var(--shadow-accent);
+    }
+
+    .process-content h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      color: var(--text-dark);
+    }
+
+    .process-content p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* =============================================
+       TESTIMONIALS SECTION
+       ============================================= */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 36px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      color: var(--accent);
+      opacity: 0.12;
+      position: absolute;
+      top: 10px;
+      left: 24px;
+      line-height: 1;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent);
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 18px;
+    }
+
+    .testimonial-stars i {
+      color: var(--gold);
+      font-size: 0.9rem;
+    }
+
+    .testimonial-text {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.05rem;
+      color: var(--text-body);
+      line-height: 1.85;
+      margin-bottom: 24px;
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      background: var(--accent-glow);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .testimonial-avatar i {
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    .testimonial-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .testimonial-role {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* =============================================
+       WHY TRUST ME SECTION
+       ============================================= */
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .trust-card {
+      text-align: center;
+      padding: 40px 24px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+
+    .trust-card:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-5px);
+      border-color: rgba(200, 149, 108, 0.3);
+    }
+
+    .trust-card-icon {
+      width: 70px;
+      height: 70px;
+      background: rgba(200, 149, 108, 0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .trust-card-icon i {
+      font-size: 1.5rem;
+      color: var(--accent-light);
+    }
+
+    .trust-card h3 {
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .trust-card p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.75;
+    }
+
+    /* =============================================
+       GUARANTEE SECTION
+       ============================================= */
+    .guarantee-section {
+      background: var(--white);
+    }
+
+    .guarantee-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .guarantee-content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .guarantee-content p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+
+    .guarantee-list {
+      margin: 25px 0;
+    }
+
+    .guarantee-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 0;
+      font-size: 1rem;
+      color: var(--text-body);
+    }
+
+    .guarantee-list li i {
+      color: var(--success);
+      font-size: 1.1rem;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .guarantee-visual {
+      text-align: center;
+    }
+
+    .guarantee-badge-large {
+      width: 280px;
+      height: 280px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      box-shadow: var(--shadow-xl);
+      border: 4px solid var(--accent);
+      position: relative;
+    }
+
+    .guarantee-badge-large::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border: 2px dashed rgba(200, 149, 108, 0.3);
+      border-radius: 50%;
+    }
+
+    .guarantee-badge-large i {
+      font-size: 3rem;
+      color: var(--accent-light);
+      margin-bottom: 12px;
+    }
+
+    .guarantee-badge-large h3 {
+      color: var(--white);
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .guarantee-badge-large p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.85rem;
+    }
+
+    /* =============================================
+       FAQ SECTION
+       ============================================= */
+    .faq-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item:hover {
+      border-color: var(--accent);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 22px 28px;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+      line-height: 1.5;
+    }
+
+    .faq-question:hover {
+      color: var(--accent);
+    }
+
+    .faq-question i {
+      transition: var(--transition);
+      color: var(--accent);
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+
+    .faq-question.active i {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      padding: 0 28px;
+    }
+
+    .faq-answer.open {
+      max-height: 300px;
+      padding: 0 28px 22px;
+    }
+
+    .faq-answer p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+    }
+
+    /* =============================================
+       CONTACT / CTA SECTION
+       ============================================= */
+    .contact-section {
+      background: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 50px;
+      align-items: flex-start;
+    }
+
+    .contact-info {
+      background: linear-gradient(165deg, var(--primary), var(--primary-dark));
+      padding: 45px;
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      position: sticky;
+      top: 100px;
+    }
+
+    .contact-info h2 {
+      color: var(--white);
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+    }
+
+    .contact-info > p {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+      margin-bottom: 35px;
+      line-height: 1.8;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .contact-detail-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(200, 149, 108, 0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-detail-icon i {
+      color: var(--accent-light);
+      font-size: 1rem;
+    }
+
+    .contact-detail h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .contact-detail a,
+    .contact-detail p {
+      color: var(--white);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .contact-detail a:hover {
+      color: var(--accent-light);
+    }
+
+    .contact-promise {
+      margin-top: 35px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .contact-promise h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .contact-promise li {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.7);
+      padding: 6px 0;
+      padding-left: 22px;
+      position: relative;
+    }
+
+    .contact-promise li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent-light);
+      font-weight: 700;
+    }
+
+    /* Form */
+    .contact-form-card {
+      background: var(--warm-white);
+      padding: 45px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+
+    .contact-form-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-form-card > p {
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      font-size: 0.95rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .form-group label .required {
+      color: #C0392B;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      color: var(--text-dark);
+      background: var(--white);
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--text-light);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .form-group select {
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236B6B6B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 400;
+      cursor: pointer;
+      font-size: 0.88rem;
+      color: var(--text-body);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .checkbox-group label:hover {
+      background: var(--cream);
+      border-color: var(--border);
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      width: auto;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .form-submit {
+      margin-top: 10px;
+    }
+
+    .form-submit .btn {
+      width: 100%;
+      padding: 18px;
+      font-size: 1.05rem;
+    }
+
+    .form-note {
+      text-align: center;
+      margin-top: 14px;
+      font-size: 0.82rem;
+      color: var(--text-light);
+    }
+
+    .form-note i {
+      color: var(--success);
+      margin-right: 4px;
+    }
+
+    /* =============================================
+       FINAL CTA SECTION
+       ============================================= */
+    .final-cta {
+      background: linear-gradient(165deg, #0a1628 0%, var(--primary-dark) 40%, var(--primary) 100%);
+      text-align: center;
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -20%;
+      width: 60%;
+      height: 200%;
+      background: radial-gradient(ellipse, rgba(200, 149, 108, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .final-cta .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .final-cta p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 650px;
+      margin: 0 auto 40px;
+      line-height: 1.9;
+      font-family: 'Crimson Text', serif;
+    }
+
+    .final-cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* =============================================
+       FOOTER
+       ============================================= */
+    .footer {
+      background: #0A0F1A;
+      padding: 60px 0 30px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .footer-brand .footer-logo .logo-faith {
+      color: var(--white);
+    }
+
+    .footer-brand .footer-logo .logo-brooklyn {
+      color: var(--accent);
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.5);
+      max-width: 350px;
+      line-height: 1.8;
+    }
+
+    .footer-links-section h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .footer-links-section li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links-section a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.5);
+      transition: var(--transition);
+    }
+
+    .footer-links-section a:hover {
+      color: var(--accent-light);
+      padding-left: 5px;
+    }
+
+    .footer-contact-info li {
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .footer-contact-info li i {
+      color: var(--accent);
+      font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-bottom p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* =============================================
+       BACK TO TOP
+       ============================================= */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 48px;
+      height: 48px;
+      background: var(--accent);
+      color: var(--white);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      z-index: 999;
+      box-shadow: var(--shadow-accent);
+    }
+
+    .back-to-top:hover {
+      background: var(--accent-dark);
+      transform: translateY(-4px);
+    }
+
+    .back-to-top.visible {
+      display: flex;
+    }
+
+    /* =============================================
+       RESPONSIVE DESIGN
+       ============================================= */
+    @media (max-width: 1024px) {
+      :root {
+        --section-padding: 90px;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+      }
+
+      .hero-content { padding: 120px 0 20px; }
+
+      .hero-subtitle { margin: 0 auto 40px; }
+
+      .hero-buttons { justify-content: center; }
+
+      .hero-trust { justify-content: center; }
+
+      .hero-image-wrapper { display: none; }
+
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .results-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .trust-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .problems-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --section-padding: 70px;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 85%;
+        max-width: 340px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        transition: var(--transition);
+        box-shadow: var(--shadow-xl);
+        padding: 40px 30px;
+        z-index: 10000;
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .nav-links a {
+        color: var(--text-body) !important;
+        font-size: 1rem;
+        padding: 12px 20px;
+        width: 100%;
+        border-radius: var(--radius-sm);
+      }
+
+      .nav-links a:hover {
+        background: var(--cream) !important;
+        color: var(--accent) !important;
+      }
+
+      .nav-cta-btn {
+        background: var(--accent) !important;
+        color: var(--white) !important;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+
+      .about-image-wrapper { order: -1; }
+
+      .about-image-wrapper img { height: 400px; }
+
+      .about-features { grid-template-columns: 1fr; }
+
+      .services-grid { grid-template-columns: 1fr; }
+
+      .results-grid { grid-template-columns: 1fr; }
+
+      .testimonials-grid { grid-template-columns: 1fr; }
+
+      .trust-grid { grid-template-columns: 1fr; }
+
+      .problems-grid { grid-template-columns: 1fr; }
+
+      .guarantee-wrapper { grid-template-columns: 1fr; gap: 40px; }
+
+      .guarantee-visual { order: -1; }
+
+      .contact-grid { grid-template-columns: 1fr; }
+
+      .contact-info { position: static; }
+
+      .form-row { grid-template-columns: 1fr; }
+
+      .checkbox-group { grid-template-columns: 1fr; }
+
+      .hero-title { font-size: 2.2rem; }
+
+      .hero-trust { flex-direction: column; gap: 20px; }
+
+      .trust-divider { display: none; }
+
+      .footer-content { flex-direction: column; }
+
+      .footer-bottom { flex-direction: column; text-align: center; }
+
+      .final-cta-buttons { flex-direction: column; align-items: center; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title { font-size: 1.9rem; }
+
+      .hero-buttons { flex-direction: column; align-items: center; }
+
+      .section-title { font-size: 1.7rem; }
+
+      .contact-info { padding: 30px; }
+
+      .contact-form-card { padding: 30px 20px; }
+
+      .guarantee-badge-large {
+        width: 220px;
+        height: 220px;
+      }
+
+      .guarantee-badge-large i { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-faith">Faith</span>
+        <span class="logo-brooklyn">Brooklyn</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="nav-cta-btn">Get Free Consultation</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <header class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-book-open"></i>
+          <span>Book Marketing Expert</span>
+        </div>
+        <h1 class="hero-title">
+          Helping Authors Get Their Books <span class="highlight">Seen, Read & Sold</span>
+        </h1>
+        <p class="hero-subtitle">
+          You poured your heart into writing your book. Now let me pour my expertise into making sure the world discovers it. I create powerful marketing strategies that connect your book with the readers who need it most.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary btn-large">Get Your Free Consultation</a>
+          <a href="#services" class="btn btn-outline-light btn-large">Explore Services</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-number">100+</span>
+            <span class="trust-label">Authors<br>Helped</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-number">50K+</span>
+            <span class="trust-label">Books<br>Sold</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-number">95%</span>
+            <span class="trust-label">Client<br>Satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <img src="WhatsApp Image 2026-01-26 at 10.15.41 AM.jpeg" alt="Faith Brooklyn - Book Marketing Expert">
+          <div class="hero-image-frame"></div>
+          <div class="hero-image-accent"></div>
+          <div class="hero-float-card card-top">
+            <div class="float-icon icon-green">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="float-card-text">
+              <h4>Sales Increased</h4>
+              <p>+300% Average Growth</p>
+            </div>
+          </div>
+          <div class="hero-float-card card-bottom">
+            <div class="float-icon icon-gold">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="float-card-text">
+              <h4>Bestseller Status</h4>
+              <p>Multiple #1 Rankings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ============================================
+       PROBLEMS / PAIN POINTS SECTION
+       ============================================ -->
+  <section class="section problems-section" id="problems">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Sound Familiar?</span>
+        <h2 class="section-title">The Painful Reality Most Authors Face</h2>
+        <div class="accent-line"></div>
+        <p class="section-subtitle">You wrote an incredible book. But if no one knows it exists, it can't change the lives it was meant to change. These are the struggles I help authors overcome every single day.</p>
+      </div>
+
+      <div class="problems-grid">
+        <div class="problem-card reveal stagger-1">
+          <div class="problem-icon">😔</div>
+          <h3>Invisible on Amazon</h3>
+          <p>Your book is buried on page 50 of search results. Readers who would love your book can't find it because your listing isn't optimized for Amazon's algorithm.</p>
+        </div>
+        <div class="problem-card reveal stagger-2">
+          <div class="problem-icon">📉</div>
+          <h3>Zero Sales After Launch</h3>
+          <p>You hit "publish" and expected sales to pour in. Instead, crickets. Days turn into weeks, and your book is collecting digital dust with barely any downloads.</p>
+        </div>
+        <div class="problem-card reveal stagger-3">
+          <div class="problem-icon">🤷</div>
+          <h3>No Marketing Strategy</h3>
+          <p>You're an incredible writer, not a marketer. You have no idea where to start, what to do, or how to reach the readers who would genuinely love your work.</p>
+        </div>
+        <div class="problem-card reveal stagger-4">
+          <div class="problem-icon">💸</div>
+          <h3>Wasted Money on Ads</h3>
+          <p>You've thrown money at Facebook ads, Amazon ads, and promotions with little to no return. Without a proper strategy, advertising dollars disappear fast.</p>
+        </div>
+        <div class="problem-card reveal stagger-5">
+          <div class="problem-icon">😰</div>
+          <h3>No Reviews or Social Proof</h3>
+          <p>Your book has zero or very few reviews, making potential readers scroll right past it. Without social proof, even a masterpiece gets overlooked.</p>
+        </div>
+        <div class="problem-card reveal stagger-6">
+          <div class="problem-icon">😞</div>
+          <h3>Ready to Give Up</h3>
+          <p>You've worked so hard on your book, but the lack of results is crushing your motivation. You're starting to wonder if it was all worth it.</p>
+        </div>
+      </div>
+
+      <div class="problems-bottom reveal">
+        <h3>You Don't Have a Book Problem. You Have a Marketing Problem.</h3>
+        <p>And that's exactly what I'm here to solve. Every one of these challenges has a solution — and I've helped hundreds of authors overcome them.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section class="section section-cream" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <img src="WhatsApp Image 2026-01-26 at 10.15.41 AM.jpeg" alt="Faith Brooklyn - Book Marketing Expert">
+          <div class="about-image-badge">
+            <h4>100+</h4>
+            <p>Authors Served</p>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="section-badge">About Me</span>
+          <h2>I'm Faith Brooklyn, and I'm Obsessed With Helping Authors Succeed</h2>
+          <p>I've always been deeply passionate about books. From a young age, I was the kid who always had a book in hand — at the dinner table, on road trips, even under the covers with a flashlight when I was supposed to be sleeping. Books shaped who I am.</p>
+          <p>As I grew older, that passion evolved into a fascination with marketing. And when I discovered that so many talented authors were struggling to get their books noticed — not because their books weren't good enough, but because they didn't have the right marketing strategy — <strong>I knew I had found my calling.</strong></p>
+          <p>Today, I help authors transform their books from hidden gems into bestsellers. I don't just run marketing campaigns — I become your dedicated partner, your strategist, and your biggest cheerleader.</p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>I specialize exclusively in book marketing</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Every strategy is personalized to your book</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Data-driven decisions, not guesswork</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>I treat your book like my own mission</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Transparent, honest communication always</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Proven track record of bestseller results</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SERVICES SECTION
+       ============================================ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">My Services</span>
+        <h2 class="section-title">Book Marketing Services That Deliver Real Results</h2>
+        <div class="accent-line"></div>
+        <p class="section-subtitle">Every service is fully customized because no two books — and no two authors — are the same. Your book is unique, and your marketing strategy should be too.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal stagger-1">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Book Launch Strategy</h3>
+          <p>Launch your book with maximum impact. I create step-by-step launch plans that generate buzz, build anticipation, and drive sales from day one.</p>
+          <ul class="service-list">
+            <li>Pre-launch timeline & planning</li>
+            <li>Launch team building</li>
+            <li>ARC distribution strategy</li>
+            <li>Release day execution</li>
+            <li>Post-launch momentum plan</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal stagger-2">
+          <div class="service-icon-wrapper">
+            <i class="fab fa-amazon"></i>
+          </div>
+          <h3>Amazon Optimization</h3>
+          <p>Rank higher in Amazon search results and convert browsers into buyers. I optimize every aspect of your listing for maximum visibility and sales.</p>
+          <ul class="service-list">
+            <li>Keyword research & optimization</li>
+            <li>Compelling book description copywriting</li>
+            <li>Strategic category placement</li>
+            <li>Review generation strategy</li>
+            <li>Ongoing monitoring & adjustments</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal stagger-3">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-envelope-open-text"></i>
+          </div>
+          <h3>Email Marketing</h3>
+          <p>Build your most valuable asset as an author — your email list. A direct line to your readers with no algorithms and no gatekeepers standing in the way.</p>
+          <ul class="service-list">
+            <li>Email platform setup</li>
+            <li>Lead magnet creation</li>
+            <li>Automated email sequences</li>
+            <li>Newsletter strategy</li>
+            <li>List growth optimization</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal stagger-4">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <h3>PR & Media Outreach</h3>
+          <p>Get your book featured in publications, podcasts, and media outlets that boost your credibility and expose your book to entirely new audiences.</p>
+          <ul class="service-list">
+            <li>Press release writing</li>
+            <li>Media pitch creation</li>
+            <li>Podcast interview booking</li>
+            <li>Book reviewer outreach</li>
+            <li>Media kit creation</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal stagger-5">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Targeted Book Promotion</h3>
+          <p>Strategic promotional campaigns that put your book in front of the exact readers who are most likely to buy, read, and love your work.</p>
+          <ul class="service-list">
+            <li>Audience research & targeting</li>
+            <li>Cross-promotion with other authors</li>
+            <li>Book deal & discount campaigns</li>
+            <li>Influencer & blogger outreach</li>
+            <li>Performance tracking</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card featured reveal stagger-6">
+          <span class="service-popular-tag">Most Popular</span>
+          <div class="service-icon-wrapper">
+            <i class="fas fa-crown"></i>
+          </div>
+          <h3>Complete Marketing Package</h3>
+          <p>The all-in-one solution for serious authors. Every service combined into one powerful, customized marketing plan designed for maximum results.</p>
+          <ul class="service-list">
+            <li>All services included</li>
+            <li>Custom marketing roadmap</li>
+            <li>Weekly email updates</li>
+            <li>Monthly performance reports</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       RESULTS / CASE STUDIES
+       ============================================ -->
+  <section class="section section-cream" id="results">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Proven Results</span>
+        <h2 class="section-title">Real Authors. Real Strategies. Real Results.</h2>
+        <div class="accent-line"></div>
+        <p class="section-subtitle">Don't just take my word for it — let the numbers speak for themselves. Here are some of the transformations I've helped create.</p>
+      </div>
+
+      <div class="results-grid">
+        <div class="result-card reveal stagger-1">
+          <div class="result-card-header">
+            <span class="result-badge">Case Study #1</span>
+            <h3>From Zero to Bestseller</h3>
+            <p>Self-Published Debut Novel</p>
+          </div>
+          <div class="result-card-body">
+            <p>First-time author with no marketing experience and zero online presence. After 2 weeks on Amazon, they had sold fewer than 10 copies.</p>
+            <div class="result-stats">
+              <div class="result-stat">
+                <h4>500+</h4>
+                <span>Books Sold</span>
+              </div>
+              <div class="result-stat">
+                <h4>#1</h4>
+                <span>Amazon Rank</span>
+              </div>
+              <div class="result-stat">
+                <h4>50+</h4>
+                <span>Reviews</span>
+              </div>
+              <div class="result-stat">
+                <h4>200%</h4>
+                <span>Sales Growth</span>
+              </div>
+            </div>
+            <p class="result-quote">"Faith didn't just market my book — she changed my entire author career. I went from selling nothing to hitting the bestseller list."</p>
+          </div>
+        </div>
+
+        <div class="result-card reveal stagger-2">
+          <div class="result-card-header">
+            <span class="result-badge">Case Study #2</span>
+            <h3>Relaunching a Struggling Book</h3>
+            <p>Non-Fiction Second Book</p>
+          </div>
+          <div class="result-card-body">
+            <p>Author had spent $500+ on failed ads with no results. Their 6-month-old book was stagnant and they were ready to give up entirely.</p>
+            <div class="result-stats">
+              <div class="result-stat">
+                <h4>1,000+</h4>
+                <span>Books Sold</span>
+              </div>
+              <div class="result-stat">
+                <h4>5+</h4>
+                <span>Podcast Features</span>
+              </div>
+              <div class="result-stat">
+                <h4>400%</h4>
+                <span>Engagement Up</span>
+              </div>
+              <div class="result-stat">
+                <h4>300%</h4>
+                <span>Ad ROI Boost</span>
+              </div>
+            </div>
+            <p class="result-quote">"My book went from barely selling to bestseller status. I only wish I had found Faith sooner."</p>
+          </div>
+        </div>
+
+        <div class="result-card reveal stagger-3">
+          <div class="result-card-header">
+            <span class="result-badge">Case Study #3</span>
+            <h3>Building an Author Brand</h3>
+            <p>Fiction Series (3 Books)</p>
+          </div>
+          <div class="result-card-body">
+            <p>Author with 3 published books but no marketing system. Small readership, tiny email list, and inconsistent sales month to month.</p>
+            <div class="result-stats">
+              <div class="result-stat">
+                <h4>5,000+</h4>
+                <span>Email Subs</span>
+              </div>
+              <div class="result-stat">
+                <h4>3x</h4>
+                <span>Income Growth</span>
+              </div>
+              <div class="result-stat">
+                <h4>40%</h4>
+                <span>Monthly Growth</span>
+              </div>
+              <div class="result-stat">
+                <h4>100+</h4>
+                <span>New Reviews</span>
+              </div>
+            </div>
+            <p class="result-quote">"Faith helped me build an entire author business. I now have systems that consistently drive sales every single month."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       PROCESS SECTION
+       ============================================ -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">How It Works</span>
+        <h2 class="section-title">My Simple, Transparent Process</h2>
+        <div class="accent-line"></div>
+        <p class="section-subtitle">Working with me is designed to be completely stress-free. Here's exactly what to expect when you decide to partner with me.</p>
+      </div>
+
+      <div class="process-wrapper">
+        <div class="process-step reveal stagger-1">
+          <div class="process-number">1</div>
+          <div class="process-content">
+            <h3>Free Discovery Consultation</h3>
+            <p>Email me to tell me about your book, your goals, and your challenges. I'll respond with my initial thoughts, recommendations, and we'll determine if we're a great fit to work together. No obligation, no pressure — just an honest conversation.</p>
+          </div>
+        </div>
+        <div class="process-step reveal stagger-2">
+          <div class="process-number">2</div>
+          <div class="process-content">
+            <h3>Custom Strategy Creation</h3>
+            <p>I'll create a detailed, customized marketing plan tailored specifically to your book, your audience, and your goals. No templates. No generic strategies. Every recommendation is built exclusively for you and your unique situation.</p>
+          </div>
+        </div>
+        <div class="process-step reveal stagger-3">
+          <div class="process-number">3</div>
+          <div class="process-content">
+            <h3>Execution & Implementation</h3>
+            <p>Once you approve the plan, we get to work. I handle the heavy lifting — the optimization, the outreach, the campaigns — while keeping you informed every step of the way through regular email updates.</p>
+          </div>
+        </div>
+        <div class="process-step reveal stagger-4">
+          <div class="process-number">4</div>
+          <div class="process-content">
+            <h3>Monitor, Analyze & Optimize</h3>
+            <p>Marketing isn't set-it-and-forget-it. I continuously monitor results, analyze data, and make strategic adjustments to ensure we're maximizing your return on investment and always moving in the right direction.</p>
+          </div>
+        </div>
+        <div class="process-step reveal stagger-5">
+          <div class="process-number">5</div>
+          <div class="process-content">
+            <h3>Celebrate Your Success 🎉</h3>
+            <p>When those sales start rolling in, reviews start pouring in, and your book starts reaching readers around the world — we celebrate together. Your success is my success, and there's nothing I love more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       TESTIMONIALS SECTION
+       ============================================ -->
+  <section class="section section-cream" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Client Testimonials</span>
+        <h2 class="section-title">What Authors Are Saying About Working With Me</h2>
+        <div class="accent-line"></div>
+        <p class="section-subtitle">The best proof of what I do isn't what I say — it's what my clients say. These are real words from real authors who trusted me with their book marketing.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal stagger-1">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"I was completely lost when I first reached out to Faith. I had self-published my debut novel and tried everything — posting on social media, asking friends to share, even running ads — but nothing worked. Faith changed everything. Within the first month of implementing her strategy, I hit the bestseller list. She didn't just market my book — she gave me the confidence to call myself a real author."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="testimonial-name">Bestselling Fiction Author</div>
+              <div class="testimonial-role">Debut Novel — Self-Published</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal stagger-2">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"I came to Faith after a really disappointing book launch. I had worked with another marketer and spent a lot of money with nothing to show for it. Faith was different. She created a detailed, customized plan that addressed every weakness. She relaunched my book with a revamped Amazon listing, targeted campaigns, and a PR strategy. Within three months — bestseller status. If you've been burned before, give Faith a chance."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="testimonial-name">Non-Fiction Author</div>
+              <div class="testimonial-role">Self-Help / Personal Development</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal stagger-3">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"As a children's book author, I wasn't sure if Faith would be the right fit. She proved me wrong immediately. She understood the children's book market, knew exactly how to reach parents, teachers, and librarians, and created a strategy perfectly tailored to my niche. My sales more than doubled, I received dozens of wonderful reviews, and my visibility skyrocketed. She's not just a marketer — she's a partner."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="testimonial-name">Children's Book Author</div>
+              <div class="testimonial-role">Illustrated Children's Series</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal stagger-4">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Faith helped me build something I never thought possible — a real, sustainable author brand. Before working with her, I had three books but no marketing system. In the year since, my email list grew from a few hundred to over 5,000 subscribers, my monthly income tripled, and I've been featured on podcasts I never would have dreamed of. Faith is brilliant at what she does, and she genuinely cares about her clients."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="testimonial-name">Fiction Series Author</div>
+              <div class="testimonial-role">3-Book Series — Long-Term Client</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       WHY TRUST ME SECTION
+       ============================================ -->
+  <section class="section section-dark" id="why-me">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge" style="background: rgba(200, 149, 108, 0.2); border-color: rgba(200, 149, 108, 0.3);">Why Choose Me</span>
+        <h2 class="section-title section-title-light">What Makes Me Different From Every Other Marketer</h2>
+        <div class="accent-line"></div>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.65);">There are a lot of marketers out there. Here's why authors specifically choose to work with me — and keep coming back book after book.</p>
+      </div>
+
+      <div class="trust-grid">
+        <div class="trust-card reveal stagger-1">
+          <div class="trust-card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Books Are All I Do</h3>
+          <p>I'm not a general marketer who dabbles in books on the side. Book marketing is my entire focus, my specialty, and my passion. I understand the publishing industry inside and out.</p>
+        </div>
+        <div class="trust-card reveal stagger-2">
+          <div class="trust-card-icon">
+            <i class="fas fa-fingerprint"></i>
+          </div>
+          <h3>100% Customized Plans</h3>
+          <p>No cookie-cutter strategies here. Every marketing plan is built from scratch specifically for your book, your audience, your genre, and your unique goals as an author.</p>
+        </div>
+        <div class="trust-card reveal stagger-3">
+          <div class="trust-card-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Data-Driven Approach</h3>
+          <p>I don't rely on gut feelings. Every strategy is backed by data, research, and proven methodologies. I track, measure, and optimize to ensure maximum return on your investment.</p>
+        </div>
+        <div class="trust-card reveal stagger-4">
+          <div class="trust-card-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>I Genuinely Care</h3>
+          <p>Your book becomes my mission. I celebrate your wins, I problem-solve your challenges, and I go above and beyond because your success truly matters to me on a personal level.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       GUARANTEE SECTION
+       ============================================ -->
+  <section class="section guarantee-section">
+    <div class="container">
+      <div class="guarantee-wrapper">
+        <div class="guarantee-content reveal-left">
+          <span class="section-badge">My Promise</span>
+          <h2>My Commitment to Your Success</h2>
+          <p>I understand that investing in book marketing is a big decision. You're trusting someone with your creative work — your baby. That's not something I take lightly.</p>
+          <p>That's why I want to be completely transparent about what you can expect when you work with me:</p>
+          <ul class="guarantee-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Honest Assessment:</strong> I'll always tell you the truth about what's working and what isn't — even when it's not what you want to hear.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Full Transparency:</strong> You'll always know exactly what I'm doing, why I'm doing it, and what results we're seeing. No hidden agendas.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Regular Updates:</strong> You'll receive consistent email updates with detailed progress reports so you're never in the dark.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>No Long-Term Contracts:</strong> I earn your business with results, not by locking you into contracts. You stay because you want to, not because you have to.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>100% Dedication:</strong> When I take on your project, you get my full attention and best effort. Period.</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Start Your Journey</a>
+        </div>
+        <div class="guarantee-visual reveal-right">
+          <div class="guarantee-badge-large">
+            <i class="fas fa-shield-halved"></i>
+            <h3>Results-Driven</h3>
+            <p>Marketing Guarantee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FAQ SECTION
+       ============================================ -->
+  <section class="section section-cream" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Common Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="accent-line"></div>
+        <p class="section-subtitle">Got questions? I've got answers. Here are the most common things authors ask before we start working together.</p>
+      </div>
+
+      <div class="faq-wrapper">
+        <div class="faq-item reveal stagger-1">
+          <button class="faq-question">How much do your services cost? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>Every project is different, so my pricing is customized based on your specific needs, goals, and the scope of work involved. I work with a variety of budgets and always aim to deliver maximum value. Email me for a free consultation and I'll provide a detailed, transparent quote tailored to your project.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-2">
+          <button class="faq-question">How long does it take to see results? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>Some strategies produce quick wins — like Amazon optimization, which can show results within days. Most comprehensive marketing efforts take 1-3 months to gain significant traction. Book marketing is a marathon, not a sprint, and I always set realistic expectations upfront while keeping you informed with regular progress updates.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-3">
+          <button class="faq-question">Do you work with authors in all genres? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>Absolutely! I work with fiction and non-fiction authors across all genres — romance, thriller, self-help, business, memoir, children's books, fantasy, sci-fi, poetry, and more. My strategies are adapted based on your specific genre, target audience, and market positioning.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-4">
+          <button class="faq-question">Do you work with both self-published and traditionally published authors? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>Yes! I work with self-published authors on Amazon KDP, traditionally published authors, and hybrid authors. My strategies are customized based on your specific publishing path, existing resources, and unique opportunities.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-5">
+          <button class="faq-question">Can I choose just one service, or do I need the full package? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>You can absolutely choose individual services! While the Complete Package delivers the most comprehensive results, each service is designed to deliver significant standalone value. During our consultation, I'll help you determine which service or combination of services is the best fit for your needs and budget.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-6">
+          <button class="faq-question">What if I have a very small budget? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>I understand that not every author has a large marketing budget, and I completely respect that. During our consultation, we'll discuss your budget openly and I'll recommend the options that deliver the most value within your means. There is always something meaningful we can do to move the needle for your book.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-6">
+          <button class="faq-question">Do you work with authors outside the United States? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>Absolutely! I work with authors from all over the world. All of my services are delivered remotely via email, so your location is never a barrier. Whether you're in the US, UK, Canada, Australia, Nigeria, India, or anywhere else — I'm here to help your book succeed globally.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Let's Work Together</span>
+        <h2 class="section-title">Your Book's Success Story Starts With One Email</h2>
+        <div class="accent-line"></div>
+        <p class="section-subtitle">Taking the first step is often the hardest — but it's also the most important. Fill out the form below and I'll personally respond within 24-48 hours with my initial thoughts and recommendations.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal-left">
+          <h2>Get In Touch</h2>
+          <p>I offer a free, no-obligation consultation where we'll discuss your book, your goals, and the best path forward. No pressure, no hard sell — just an honest conversation about how I can help your book reach more readers.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email Me</h4>
+              <a href="mailto:faithbrooklyn59@gmail.com">faithbrooklyn59@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h4>Response Time</h4>
+              <p>Within 24-48 business hours</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Available Worldwide (Remote)</p>
+            </div>
+          </div>
+
+          <div class="contact-promise">
+            <h4>What Happens After You Reach Out:</h4>
+            <ul>
+              <li>I personally review your message within 24-48 hours</li>
+              <li>I respond with my initial thoughts and recommendations</li>
+              <li>We discuss your goals and I answer all your questions</li>
+              <li>I create a custom proposal tailored to your book</li>
+              <li>We kick off and start building your book's success</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal-right">
+          <h2>Send Me a Message</h2>
+          <p>Fill out the form below and I'll get back to you with a personalized response within 24-48 hours.</p>
+
+          <form action="https://formspree.io/f/mvzbqaab" method="POST" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookTitle">Your Book Title</label>
+                <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter your book title (if applicable)">
+              </div>
+              <div class="form-group">
+                <label for="genre">Book Genre</label>
+                <select id="genre" name="genre">
+                  <option value="">Select your genre</option>
+                  <option value="Fiction">Fiction</option>
+                  <option value="Non-Fiction">Non-Fiction</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Thriller/Mystery">Thriller / Mystery</option>
+                  <option value="Self-Help">Self-Help / Personal Development</option>
+                  <option value="Business">Business / Finance</option>
+                  <option value="Memoir">Memoir / Biography</option>
+                  <option value="Children">Children's Books</option>
+                  <option value="Fantasy/Sci-Fi">Fantasy / Sci-Fi</option>
+                  <option value="Poetry">Poetry</option>
+                  <option value="Religious/Spiritual">Religious / Spiritual</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="published">Is your book published yet?</label>
+              <select id="published" name="published">
+                <option value="">Select an option</option>
+                <option value="Yes, already published">Yes, it's already published</option>
+                <option value="No, still writing">No, I'm still writing it</option>
+                <option value="No, almost ready">No, but it's almost ready to publish</option>
+                <option value="Planning to write">I'm planning to write one</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>What service are you most interested in?</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="service" value="Book Launch Strategy"> Book Launch Strategy</label>
+                <label><input type="checkbox" name="service" value="Amazon Optimization"> Amazon Optimization</label>
+                <label><input type="checkbox" name="service" value="Email Marketing"> Email Marketing</label>
+                <label><input type="checkbox" name="service" value="PR & Media Outreach"> PR & Media Outreach</label>
+                <label><input type="checkbox" name="service" value="Targeted Book Promotion"> Targeted Book Promotion</label>
+                <label><input type="checkbox" name="service" value="Complete Marketing Package"> Complete Marketing Package</label>
+                <label><input type="checkbox" name="service" value="Not Sure"> Not Sure — I Need Guidance</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Your Approximate Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select your budget range</option>
+                <option value="Under $500">Under $500</option>
+                <option value="$500 - $1,000">$500 - $1,000</option>
+                <option value="$1,000 - $2,500">$1,000 - $2,500</option>
+                <option value="$2,500 - $5,000">$2,500 - $5,000</option>
+                <option value="$5,000+">$5,000+</option>
+                <option value="Not sure yet">I'm not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell me about your book and your goals <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Share details about your book, your biggest marketing challenges, what you've already tried, and what success looks like for you..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="hearAbout">How did you hear about me?</label>
+              <select id="hearAbout" name="hearAbout">
+                <option value="">Select an option</option>
+                <option value="Google Search">Google Search</option>
+                <option value="Referral">Referral from Another Author</option>
+                <option value="Podcast">Podcast</option>
+                <option value="Blog/Article">Blog or Article</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Send My Message <i class="fas fa-paper-plane"></i></button>
+            </div>
+            <p class="form-note"><i class="fas fa-lock"></i> Your information is 100% secure and will never be shared with anyone.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FINAL CTA SECTION
+       ============================================ -->
+  <section class="final-cta">
+    <div class="container reveal">
+      <h2>Your Book Has the Power to Change Lives.<br>Let's Make Sure the World Knows It Exists.</h2>
+      <p>Every day that passes without a marketing strategy is another day your book sits unseen by the readers who need it most. Don't let your hard work go to waste. Take the first step today — your future readers are waiting.</p>
+      <div class="final-cta-buttons">
+        <a href="#contact" class="btn btn-primary btn-large">Get Your Free Consultation Now</a>
+        <a href="mailto:faithbrooklyn59@gmail.com" class="btn btn-outline-light btn-large">Email Me Directly</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-faith">Faith</span> <span class="logo-brooklyn">Brooklyn</span>
+          </a>
+          <p>Professional book marketing expert dedicated to helping authors get their books seen, read, and sold. Your book deserves to be read — let's make it happen.</p>
+        </div>
+
+        <div class="footer-links-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Book Launch Strategy</a></li>
+            <li><a href="#services">Amazon Optimization</a></li>
+            <li><a href="#services">Email Marketing</a></li>
+            <li><a href="#services">PR & Media Outreach</a></li>
+            <li><a href="#services">Targeted Promotion</a></li>
+            <li><a href="#services">Complete Package</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-section">
+          <h4>Contact</h4>
+          <ul class="footer-contact-info">
+            <li><i class="fas fa-envelope"></i> faithbrooklyn59@gmail.com</li>
+            <li><i class="fas fa-globe-americas"></i> Available Worldwide</li>
+            <li><i class="fas fa-clock"></i> Response: 24-48 Hours</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Faith Brooklyn. All Rights Reserved.</p>
+        <p>Crafted with ❤️ for authors everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+
+  <!-- ============================================
+       JAVASCRIPT
+       ============================================ -->
+  <script>
+    // ---- NAVBAR SCROLL EFFECT ----
+    const navbar = document.getElementById('navbar');
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      // Navbar background
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      // Back to top button
+      if (window.scrollY > 600) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    // ---- BACK TO TOP ----
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ---- MOBILE MENU ----
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function toggleMenu() {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navOverlay.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', toggleMenu);
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    // ---- SCROLL REVEAL ANIMATIONS ----
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+      const windowHeight = window.innerHeight;
+
+      reveals.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (elementTop < windowHeight - revealPoint) {
+          el.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // ---- FAQ ACCORDION ----
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const isOpen = answer.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+        document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+
+        // Toggle current
+        if (!isOpen) {
+          answer.classList.add('open');
+          question.classList.add('active');
+        }
+      });
+    });
+
+    // ---- SMOOTH SCROLL FOR NAV LINKS ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const navHeight = navbar.offsetHeight;
+          const targetPosition = target.offsetTop - navHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // ---- ACTIVE NAV LINK HIGHLIGHT ----
+    const sections = document.querySelectorAll('section[id], header[id]');
+    const navItems = document.querySelectorAll('.nav-links a:not(.nav-cta-btn)');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navItems.forEach(link => {
+        link.style.fontWeight = '500';
+        if (link.getAttribute('href') === '#' + current) {
+          link.style.fontWeight = '700';
+        }
+      });
+    });
+
+    // ---- COUNTER ANIMATION ----
+    function animateCounters() {
+      const counters = document.querySelectorAll('.trust-number, .result-stat h4');
+      counters.forEach(counter => {
+        if (counter.dataset.animated) return;
+
+        const rect = counter.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          counter.dataset.animated = true;
+          const text = counter.textContent;
+          const num = parseInt(text.replace(/[^0-9]/g, ''));
+
+          if (isNaN(num) || num === 0) return;
+
+          const suffix = text.replace(/[0-9,]/g, '');
+          const duration = 2000;
+          const steps = 60;
+          const increment = num / steps;
+          let current = 0;
+          let step = 0;
+
+          const timer = setInterval(() => {
+            current += increment;
+            step++;
+            if (step >= steps) {
+              counter.textContent = text;
+              clearInterval(timer);
+            } else {
+              counter.textContent = Math.floor(current).toLocaleString() + suffix;
+            }
+          }, duration / steps);
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateCounters);
+    window.addEventListener('load', animateCounters);
+
+    // ---- FORM SUCCESS HANDLING ----
+    const form = document.getElementById('contactForm');
+    if (form) {
+      form.addEventListener('submit', function() {
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+      });
+    }
+
+    // Check for successful submission (Formspree redirects back)
+    if (window.location.search.includes('success')) {
+      alert('Thank you for your message! I\'ll get back to you within 24-48 hours.');
+    }
+
+    console.log('✅ Faith Brooklyn Website Loaded Successfully');
+  </script>
+
+</body>
+</html>
